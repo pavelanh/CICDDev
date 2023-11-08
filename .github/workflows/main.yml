@@ -15,10 +15,10 @@ jobs:
         uses: algosec/prevasio-cicd-container-security-action@v1.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          API: ${{ secrets.CF_LOGIN_API  }}
-          ALGOSEC_TENANT_ID: ${{ secrets.CF_TENANT_ID }}
-          ALGOSEC_CLIENT_ID: ${{ secrets.CF_CLIENT_ID }}
-          ALGOSEC_CLIENT_SECRET: ${{ secrets.CF_CLIENT_SECRET }}
+          CF_LOGIN_API: ${{ secrets.CF_LOGIN_API  }}
+          ALGOSEC_TENANT_ID: ${{ secrets.ALGOSEC_TENANT_ID }}
+          ALGOSEC_CLIENT_ID: ${{ secrets.ALGOSEC_CLIENT_ID }}
+          ALGOSEC_CLIENT_SECRET: ${{ secrets.ALGOSEC_CLIENT_SECRET }}
           WORKING_DIR: .
           DOCKERFILE_NAME: Dockerfile
           MIN_LEVEL_TO_BLOCK_PR: 0
