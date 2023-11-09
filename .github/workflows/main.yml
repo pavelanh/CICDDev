@@ -12,7 +12,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Algosec Prevasio CI/CD Container Security
-        uses: algosec/prevasio-cicd-container-security-action@v1.0.0
+        uses: algosec/prevasio-cicd-container-security-action@v1.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           CF_LOGIN_API: https://dev.app.algosec.com/api/algosaas/auth/v1/access-keys/login
