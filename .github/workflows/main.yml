@@ -8,9 +8,6 @@ jobs:
   algosec-prevasio-cicd-container-security:
     name: Algosec Prevasio CI/CD Container Security
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -18,6 +15,8 @@ jobs:
         uses: algosec/prevasio-cicd-container-security-action@v1.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CF_LOGIN_API: https://dev.app.algosec.com/api/algosaas/auth/v1/access-keys/login
+          APIGATEWAY_BASE_URL: https://vgveaxdore.execute-api.us-east-1.amazonaws.com/dev/api/ci/docker-scan
           ALGOSEC_TENANT_ID: ${{ secrets.ALGOSEC_TENANT_ID }}
           ALGOSEC_CLIENT_ID: ${{ secrets.ALGOSEC_CLIENT_ID }}
           ALGOSEC_CLIENT_SECRET: ${{ secrets.ALGOSEC_CLIENT_SECRET }}
