@@ -10,5 +10,5 @@ EXPOSE 8088
 RUN apt-get update && apt-get install -y curl
 
 COPY /ping.sh ping.sh
-Run chmod x ping.sh/
+Run chmod +x ping.sh
 CMD ["/bin/sh", "ping.sh"]
