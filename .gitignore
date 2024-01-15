@@ -61,7 +61,7 @@ atlassian-ide-plugin.xml
 # Cursive Clojure plugin
 .idea/replstate.xml
 
-# SonarLint plugin
+# Sonarlint plugin
 .idea/sonarlint/
 
 # Crashlytics plugin (for Android Studio and IntelliJ)
