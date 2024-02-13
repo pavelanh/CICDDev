@@ -26,3 +26,4 @@ jobs:
           WORKING_DIR: /docker
           DOCKERFILE_NAME: Dockerfile
           MIN_LEVEL_TO_BLOCK_PR: 0
+          CF_REGION: dev
