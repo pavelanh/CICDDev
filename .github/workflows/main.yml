@@ -51,7 +51,7 @@ jobs:
           PRODUCT: prevasio
           FRAMEWORK: docker
           WORK_ON_CHANGE: false
-          WORKING_DIR: /docker
+          WORKING_DIR: .
           DOCKERFILE_NAME: Dockerfile
           APIGATEWAY_BASE_URL: https://vgveaxdore.execute-api.us-east-1.amazonaws.com/dev/api/ci/docker-scan
           MIN_LEVEL_TO_BLOCK_PR: 0
